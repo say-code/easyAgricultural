@@ -16,7 +16,7 @@ body{
     background-color: #ffffff;
     /*margin-top: 0;*/
     height: 68px;
-    box-shadow: rgba(193, 193, 193, 0.61) 10px 10px 15px 5px ;
+    box-shadow: rgba(193, 193, 193, 0.61) 10px 2px 5px 5px ;
     display:flex;
     justify-content: space-around;
 }
@@ -66,11 +66,12 @@ body{
 }
 
 #lead_slogan{
+    width: 300px;
     font-size: 24px;
     margin-left: 105px;
     font-weight: bold;
     color: rgb(89, 130, 63);
-    margin-top: 13px;
+    margin-top: 16px;
     /*    96b97d green title*/
 
 }

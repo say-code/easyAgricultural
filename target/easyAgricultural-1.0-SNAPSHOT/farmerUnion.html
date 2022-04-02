@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/seeCultivation.css">
-    <link rel="stylesheet" type="text/css" href="css/farmerUnion.css">
     <link rel="stylesheet" type="text/css" href="bootstrap-3.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/farmerUnion_two.css">
     <title>社交农联</title>
 </head>
 <body>
@@ -17,9 +17,9 @@
     <li><a href="onlineSale.html">线上展销</a><br><div></div></li>
     <li><a href="seeCultivation.html">看见耕耘</a><br><div></div></li>
     <li><a href="farmerUnion.html">社交农联</a><br><div></div></li>
-    <li><a href="/market">市场分析</a><br><div></div></li>
-    <li><a>志愿服务</a><br><div></div></li>
-    <li><a>农险定制</a><br><div></div></li>
+    <li><a href="MarketAnalysis.html">市场分析</a><br><div></div></li>
+    <li><a href="xxl/project/voluntaryService.html">志愿服务</a><br><div></div></li>
+    <li><a href="RuralInsuranceCustomization.html">农险定制</a><br><div></div></li>
   </ul>
   <div id="lead_slogan">
     <p>易农为农&nbsp&nbsp&nbsp沟通两岸</p>
@@ -30,38 +30,92 @@
     <div><p><a href="index.html">退出登录</a></p><br><div></div></div>
   </div>
 </div>
-<div id="search">
+<!-- <div id="search">
   <p>话题搜索</p>
   <input type="search">
   <button type="button"><span class="
 glyphicon glyphicon-search" id="button_searchImg"></span>搜索</button>
-</div>
+</div> -->
 
 <div id="classify">
   <ul>
-    <li id="l1">灌溉技术</li>
-    <li>对症下药</li>
-    <li>生产计划</li>
-    <li>每日随笔</li>
-    <li>问题咨询</li>
-    <li>农群聊吧</li>
+    <li id="l1"><a href="./farmerUnion/1.灌溉技术.html"target="hello" style="color: green;">灌溉技术</a></li>
+    <li id="l2"><a href="./farmerUnion/2.对症下药.html"target="hello" style="color: green;">对症下药</a></li>
+    <li id="l3"><a href="./farmerUnion/3.生产计划.html"target="hello" style="color: green;">生产计划</a></li>
+    <li id="l4"><a href="./farmerUnion/4.每日随笔.html"target="hello" style="color: green;">每日随笔</a></li>
+    <li id="l5"><a href="./farmerUnion/5.问题咨询.html"target="hello" style="color: green;">问题咨询</a></li>
+    <li id="l6"><a href="./farmerUnion/6.农群聊吧.html"target="hello" style="color: green;">农群聊吧</a></li>
   </ul>
   <span id="classify_divider">
-        <span class="classify_in_divider" id="c1"></span>
-        <span class="classify_in_divider" id="c2"></span>
-        <span class="classify_in_divider" id="c3"></span>
-        <span class="classify_in_divider" id="c4"></span>
-        <span class="classify_in_divider" id="c5"></span>
-        <span class="classify_in_divider" id="c6"></span>
-    </span>
+  </span>
+  <iframe src="./farmerUnion/1.灌溉技术.html" name="hello"id="frame" >
+
+  </iframe>
 </div>
-<div class="topic">
-  <p class="topic_userName">absd</p>
-  <span class="topic_divider"></span>
-  <div class="topic_message"><p>aaaaaaa</p></div>
-  <p class="topic_time">2022/2/25</p>
-  <div class="topic_comment">评论</div>
-  <div class="topic_great">点赞</div>
+
+<!-- fixed定标签 -->
+<div class="fix">
+       <!-- 发帖 -->
+      <section class="one">
+        <section class="one_g glyphicon glyphicon-edit">
+          
+        </section>
+        <p class="one_p"><a href="#end_" style="text-decoration:none">写评论</a></p>
+      </section>
+      
+      <!-- 刷新 -->
+      <section class="two">
+        <section class="two_g glyphicon glyphicon-refresh">
+          
+        </section>
+        <p class="two_p"><a href="./farmerUnion.html" style="text-decoration:none">刷新</a></p>
+      </section> 
+
+      <!-- 我要反馈 -->
+      <section class="three">
+        <section class="three_g glyphicon glyphicon-exclamation-sign">
+
+        </section>
+        <p class="three_p">我要反馈</p>
+      </section>
+
+      <!-- 返回顶部 -->
+      <section class="four">
+        <section class="four_g glyphicon glyphicon-menu-up">
+
+        </section>
+        <p class="four_p"><a href="#lead_ul" style="text-decoration:none">回到顶部</a></p>
+      </section>   
 </div>
+
+<!-- <div class="tree_">
+  <div class="glyphicon glyphicon-tree-conifer">
+
+  </div>
+</div> -->
+
+<!-- 评论 -->
+<form action="" class="comments_form">
+   <main class="Username_title">
+     <span class="glyphicon glyphicon-tree-deciduous"></span> 
+     <p>尊贵的农联用户</p>
+     <span class="glyphicon glyphicon-tree-deciduous"></span>
+   </main>
+   <section class="text_input">
+       <!-- 输入 -->
+       <input type="text" class="text_first" placeholder="发一条友善的评论" id="end_">
+      <!-- 提交 -->
+       <button class="text_second">
+         发表
+         <br>
+         评论
+       </button>
+
+      </section>
+   </section>
+</form>
+<br>
+<br>
+
 </body>
 </html>

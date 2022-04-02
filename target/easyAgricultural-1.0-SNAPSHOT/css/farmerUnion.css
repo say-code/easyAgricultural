@@ -1,10 +1,10 @@
 .topic{
-    width: 870px;
-    margin: 50px auto;
+    width: 800px;
+    margin: 25px auto;
     height: 220px;
     border:  #929090 solid 1px;
     padding: 12px;
-    box-shadow: rgba(193, 193, 193, 0.61) 4px 4px 3px 2px ;
+    /*box-shadow: rgba(193, 193, 193, 0.61) 4px 4px 3px 2px ;*/
     border-radius: 5px;
 
 }
@@ -30,21 +30,21 @@
 
 .topic_time{
     display: inline-block;
-    ont-size: 16px;
+    font-size: 16px;
 
 }
 
 .topic_comment{
     display: flow;
     float: right;
-    font-size: 16px;
+    font-size: 26px;
     margin-right: 15px;
 }
 
 .topic_great{
     display: flow;
     float: right;
-    font-size: 16px;
+    font-size: 24px;
     margin-right: 35px;
 }
 
@@ -52,5 +52,10 @@
     color: rgb(89, 130, 63);
 }
 
+.topic_comment:active{
+    color: rgb(89, 130, 63);
+}
 
-
+body{
+    /* background-image: url(../image/farmerimg.jpg); */
+}

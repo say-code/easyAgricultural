@@ -1,0 +1,16 @@
+.w{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*解决高度塌陷和外边距重叠*/
+.clearfix:before,
+.clearfix:after{
+    content: '';
+    display: table;
+    clear: both;
+} 

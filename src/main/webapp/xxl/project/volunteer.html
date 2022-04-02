@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择活动</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/famer.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./fa-icon/css/all.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/activity8.css">
+    <link rel="stylesheet" href="./css/volunteer.css">
+    <link rel="icon" href="./img/famer.ico">
+    <script src="./js/to-top.js"></script>
+    
+    <script>
+        window.onload = function () {
+            var backTop = document.getElementById("backTop");
+            var f = go_back;
+            f(backTop);
+        };
+    </script>
+</head>
+
+<body>
+    <div id="top" class="top-bar ">
+        <div class="logo"></div>
+        <ul class="top-list w">
+            <li class="list"><a href="../../home.html">首页</a></li>
+            <li class="list"><a href="./famer.html">选取志愿者</a></li>
+            <li class="list"><a id="publish" href="./publishActivity.html">发布志愿活动</a></li>
+            <li class="list"><a id="Iback" href="./Iback.html">我要反馈</a></li>
+        </ul>
+    </div>
+
+    <div class="chooce w">
+        <div class="left-box">
+            <div class="left-box-top">
+                <div class="left-top-img"></div>
+                <div class="right-top">
+                    <h1 class="titleH1">陈东</h1>
+                    <table class="tableBox">
+                        <tr>
+                            <th>志愿编号:</th>
+                            <td>
+                                <span>P43406222</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>志愿类别:</th>
+                            <td>
+                                <span class="containText">社区服务</span>
+                                <span class="containText">关爱特殊群体</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="signup-box">
+                <table class="table1">
+                    <tr>
+                        <th align="left">性别：<p class="s-p">男</p></th>
+                        <th class="age">年龄：<p class="s-p">20</p></th>
+                      
+                        <th><a id="sup" class="signa" href="javascript:void(0);" onclick="signUp(obj)" >就要这个</a></th>
+                    </tr>
+                </table>
+                <table class="table2"> 
+                        <tr class="table2-tr">
+                            <th class="table-th">志愿ID：</th>
+                            <th class="table-th">区域：</th>
+                            <th class="table-th">个人特长：</th>
+                        </tr>
+                        <tr class="table2-tr tr2">
+                            <td>P51132420</td>
+                            <td class="locationIt">钟楼区</td>
+                            <td>身体健康，热爱运动</td>
+                        </tr>
+                </table>
+            </div>
+            <div class="bottom-box">
+                <div class="box1">
+                   <div class="box-contain"><p class="pc">
+                       个人简介</p></div>
+                </div>
+                <div class="box2">
+                   身体健康，热爱运动，乐于助人，热爱劳动
+                </div>
+            </div>
+        </div>
+        <div class="right-box w2">
+            <div class="publish-perple-box">
+                <h2 class="linkp">联系人</h2>
+                <div class="people">
+                    <h3 class="name-p">陈东</h3>
+                    <p class="phone">电话：15293319031</p>
+                </div>
+            </div>
+            <div class="publish-location-box">
+                <h2 class="linkp">地址</h2>
+                <p class="location">江苏省常州市钟楼区中吴大道1801号</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="sider">
+        <div class="refresh">
+            <a class="xin" href="./activity8.html">
+                <i class="fa fa-refresh" aria-hidden="true"></i>
+                <span class="shua">刷新</span>
+            </a>
+        </div>
+        <div id="backTop">
+            <div class="btop">
+                <i class="re fa fa-arrow-circle-left" aria-hidden="true"></i>
+                <span class="t">顶部</span>
+            </div>
+        </div>
+    </div>
+
+    <script>     
+       var obj = {
+           valueI:'已选择'
+       }    
+        function signUp(obj){
+            var sup =document.getElementById("sup");       
+            sup.innerText =obj.valueI;
+            sup.style.backgroundColor='rgba(255, 0, 0, 0.938)';
+        }
+    </script>
+</body>
+
+</html>

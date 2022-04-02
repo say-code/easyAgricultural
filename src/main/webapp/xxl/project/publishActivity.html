@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>发布志愿活动</title>
+    <link rel="stylesheet" href="./css/publishActivity.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./fa-icon/css/all.css">
+    <link rel="icon" href="./img/famer.ico">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/to-top.js"></script>
+    <script>
+        window.onload = function () {
+            var backTop = document.getElementById("backTop");
+            var f = go_back;
+            f(backTop);
+        }
+    </script>
+</head>
+
+<body>
+    <div id="top" class="top-bar ">
+        <div class="logo"></div>
+        <ul class="top-list w">
+            <li class="list"><a href="">首页</a></li>
+            <li class="list"><a id="chooseVolunteer" href="./famer.html">选取志愿者</a></li>
+            <li class="list"><a id="publish" href="./publishActivity.html">发布志愿活动</a></li>
+            <li class="list"><a id="Iback" href="./Iback.html">我要反馈</a></li>
+        </ul>
+    </div>
+
+
+    <div id="Ibk" class="Ireback">
+        <div class="bcakBox-bar">
+            <div class="box">
+                <h1 id="maintitle">发布志愿活动</h1>
+
+                <div class="title1">
+                    基本信息
+                </div>
+
+                <form action="" autocomplete="off" method="POST">
+                    <div class="contain1">
+                       
+                        <div class="bar">
+                        <span class="messageSpan">
+                            <i class="star">*</i>
+                            项目名称：
+                        </span>
+                   
+                        <input name="projectName" class="projectTitle" type="text">
+                     </div>
+                      
+                      
+                        <div class="bar">
+                        <span class="messageSpan">
+                            <i class="star">*</i>
+                            服务地点：
+                        </span>
+                        <input name="serverLocation" class="projectTitle" type="text">
+                    </div>
+                     
+                  
+                        <div class="bar">
+                        <span class="messageSpan">
+                            <i class="star">*</i>
+                            服务类别：
+                        </span>
+                        <input class="s" type="radio" name="serverClass" value="sow">春耕播种
+                        <input class="s" type="radio" name="serverClass" value="early_rice">早稻插秧
+                        <input class="s" type="radio" name="serverClass" value="semilate_rice">中稻插秧
+                        <input class="s" type="radio" name="serverClass" value="late_rice">晚稻插秧
+                        <input class="s" type="radio" name="serverClass" value="harvest">秋天收割
+                        <input class="s" type="radio" name="serverClass" value="other" checked>其他
+                    </div>
+                   
+                    <div class="bar">
+                        <span class="messageSpan">
+                            <i class="star">*</i>
+                            项目起止日期：
+                        </span>
+                        <input name="project_dateStar" class="dateChoose" type="date">
+                        <span class="space">至</span>
+                        <input name="project_dateover" class="dateChoose" type="date">
+                    </div>
+                   
+                    <div class="bar">
+                        <span class="messageSpan">
+                            <i class="star">*</i>
+                            招募起止日期：
+                        </span>
+                        <input  name="recruit_dateStar" class="dateChoose" type="date">
+                        <span class="space">至</span>
+                        <input  name="recruit_dateStar" class="dateChoose" type="date">
+                    </div>
+
+                    <div class="bar">
+                    <span class="messageSpan">
+                        <i class="star">*</i>
+                        开始志愿服务具体的时间：
+                    </span>
+                    <div class="specificDate">
+                        <textarea placeholder="从几月几号，什么时候开始，什么时候结束" name="Message1" id="backMessage" required></textarea>
+                    </div>
+                 </div>
+                 
+                 <div class="bar">
+                    <span class="messageSpan">
+                        <i class="star">*</i>
+                        项目的详细情况：
+                    </span>
+                    <div class="specificDate">
+                        <textarea placeholder="请输入1至1500字的相关信息" name="Message2" id="backMessage" required></textarea>
+                    </div>
+                 </div>
+
+                    </div>
+                    <br>
+                    <i class="star">*</i>
+                    <span>1.&nbsp;&nbsp;上传相关的照片</span>
+                    <br>
+                    <div class="container1">
+                        <div class="box">
+                            <div class="demos">
+                                <label><span style="color: #ff0000;">*</span>图片：<i class="icon-img"
+                                        id="div_imgfile"></i></label>
+                                <input type="file" multiple="multiple" capture="camera" accept='image/*' id="fileItem"
+                                    num="9" style="display: none;">
+                                <div id="imgContainer_waitForUpload"></div>
+
+                                <div class="previewBox" onclick="previewBoxClose()">
+                                    <img src="" alt="" id="previewImg" onclick="previewBoxClose()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="bar">
+                        <span class="messageSpan">
+                            <i class="star">*</i>
+                            2.&nbsp;&nbsp;联系人姓名：
+                        </span>
+                        <input name="contactsName" class="projectTitle" type="text">
+                    </div>
+                    <br>
+                    <br>
+                    <i class="star">*</i>
+                    <span>3.&nbsp;&nbsp;联系人手机：</span>
+                    <input type="number" name="PhoneNumber" oninput="if(value.length>11)value=value.slice(0,11)"maxlength="11">
+                    <br>
+                    <br>
+                    <div class="bar">
+                        <span class="messageSpan">
+                            <i class="star">*</i>
+                            4.&nbsp;&nbsp;联系人邮箱：
+                        </span>
+                        <input name="mailbox" class="projectTitle" type="text">
+                    </div>
+                    <br>
+                    <button class="smit" type="submit" name="subMit">提交</button>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="sider" class="sider">
+        <div class="reback">
+            <a id="bac" class="bac" href="#Iback">
+                <i class="ri fa fa-commenting" aria-hidden="true"></i>
+                <span class="rb">反馈</span>
+            </a>
+        </div>
+        <div class="refresh">
+            <a class="xin" href="./publishActivity.html">
+                <i class="fa fa-refresh" aria-hidden="true"></i>
+                <span class="shua">刷新</span>
+            </a>
+        </div>
+        <div id="backTop">
+            <div class="btop">
+                <i class="re fa fa-arrow-circle-left" aria-hidden="true"></i>
+                <span class="t">顶部</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        var div_imgfile = document.getElementById('div_imgfile');
+        var fileItem = document.getElementById('fileItem');
+
+        //点击触发input file点击
+        div_imgfile.onclick = function () {
+            if ($(".lookimg").length >= 1) {
+                alert("上传图片后一次图片后再点击上传图片有bug！也可以一次性选择多个图片上传！");
+                return;
+            };
+            return $("#fileItem").click();//打开对象选择框
+        };
+
+        //选中后点击确定触发的onchange事件
+        fileItem.onchange = function setBlogrollImageName(e) {
+            var file = null;
+            if (e.path[0].id == "fileItem") {
+                var filesItem = e.path[0].files;
+
+                if (filesItem.length >= 9) {
+
+                    alert("一次最多上传" + 9 + "张图片");
+                    return;
+                } else {
+                    for (var i = 0; i < filesItem.length; i++) {
+                        file = filesItem[i];
+                        // FileReader 对象允许Web应用程序异步读取存储在用户计算机上的文件（或原始数据缓冲区）的内容，使用 File 或 Blob 对象指定要读取的文件或数据。
+                        // 有关FileReader的讲解：https://www.jianshu.com/p/42fd93f08554
+                        var reader = new FileReader();
+                        reader.readAsDataURL(file);
+                        reader.onload = function (val) {
+                            //compress三个参数
+                            //imgUrl：读取选中文件的数据(本文章主要针对选中图片的数据)，
+                            compress(this.result);
+                        };
+                    }
+                };
+            }
+        };
+
+        //渲染图片方法
+        function compress(imgUrl) {
+            //创建预览外层
+            var _prevdiv = document.createElement("div");
+            _prevdiv.setAttribute("class", "lookimg");
+
+            //创建内层img对象
+            var preview = document.createElement("img");
+            preview.setAttribute("onclick", "lookimgFun(this)");
+            preview.src = imgUrl;//读取加载，将图片编码绑定到元素
+            $(_prevdiv).append(preview);
+
+            //创建删除按钮
+            var img_belbtn = document.createElement("div");
+            img_belbtn.setAttribute("class", "lookimg_delBtn");
+            img_belbtn.setAttribute("onclick", "romoveLookimg(this)");
+            $(_prevdiv).append(img_belbtn);
+
+            //显示到待传列表中
+            $("#imgContainer_waitForUpload").append(_prevdiv);
+        }
+
+        //删除选中图片
+        function romoveLookimg(val) {
+            $(val).parent().remove();
+        }
+
+        //预览图片
+        function lookimgFun(val) {
+            var src_value = $(val).attr('src');
+            $('.previewBox').css("display", "block");
+            $('#previewImg').attr('src', src_value);
+            var previewImgheight = $('#previewImg').height();
+            var clientHeight = document.body.clientHeight;
+            var num = null;
+            if (previewImgheight < clientHeight) {
+                num = (clientHeight - previewImgheight) / 2;
+            }
+            $('#previewImg').css("margin-top", num);
+        }
+
+        //预览图片关闭功能
+        function previewBoxClose() {
+            $('.previewBox').css("display", "none");
+        }
+    </script>
+</body>
+
+</html>

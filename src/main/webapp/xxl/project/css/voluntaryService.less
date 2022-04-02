@@ -1,0 +1,64 @@
+
+/*下面两个盒子的基本样式*/
+.base-v{
+    width: 323px;
+    height: 353px;
+    border-radius: 4%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: url("../img/bc.jpg") center/cover no-repeat;
+    // background-size: 1000px auto;
+    .first-picture{
+        width: 100%;
+        height: 100%;
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .left-voluntar:extend(.base-v){
+            background-color: rgba(238, 10, 10, 0.767);
+            margin-right: 50px;
+           
+        }
+ 
+        .right-famer:extend(.base-v){ 
+            background-color: rgba(20, 218, 79, 0.815);
+          
+        }
+
+        .left-voluntar:hover,.right-famer:hover{
+            transform: translateY(-3px);
+            box-shadow: 0 0 5px rgba(0, 0, 0, .6);
+        }
+
+        a{
+            color: rgba(0, 0, 0, 0.9);
+            display: block;
+            font-size: 30px;
+
+            .fa{
+                 margin-right: 20px;
+             }
+
+        }
+       
+        .right-a:hover,.left-a:hover{
+            color: rgba(255, 255, 255, 0.9);
+        }
+    }
+}
+

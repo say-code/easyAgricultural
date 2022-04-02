@@ -1,14 +1,17 @@
 body{
     height:100vh;
-    weight:100vh;
+    weight:100vw;
+    
 }
 
 #lead{
+    /*margin-top:-10px;*/
+    /*margin-left: -1%;*/
     width: 100%;
     background-color: #ffffff;
-    margin-top: 0;
+    /*margin-top: 0;*/
     height: 68px;
-    box-shadow: rgba(193, 193, 193, 0.61) 10px 10px 15px 5px ;
+    box-shadow: rgba(193, 193, 193, 0.61) 10px 2px 5px 5px ;
     display:flex;
     justify-content: space-around;
 }
@@ -24,7 +27,7 @@ body{
     justify-content: space-around;
     margin-top: 21px;
     font-size:17px;
-    margin-left: -75px;
+    margin-left: -105px;
     text-decoration: none;
 
 
@@ -58,6 +61,7 @@ body{
 }
 
 #lead_slogan{
+    width: 300px;
     font-size: 24px;
     margin-left: 105px;
     font-weight: bold;
@@ -70,7 +74,7 @@ body{
 #lead_person{
     display:flex;
     justify-content: space-around;
-    margin-top: 19px;
+    margin-top: 18px;
     font-size:17px;
     margin-left: -75px;
 }
@@ -80,9 +84,25 @@ body{
     margin-left: 9px;
 }
 
-#lead_person>div>p>a {
+#lead_person>div>p>a{
     text-decoration: none;
-    color: black;
+    color:black;
+}
+
+#lead_person>div>div{
+    margin-top: 12px;
+    margin-left:15%;
+    width:70%;
+    border:rgb(89, 130, 63) solid 1px;
+    display:none;
+}
+
+#lead_person>div:hover p>a{
+    color: rgb(89, 130, 63);
+}
+
+#lead_person>div:hover div{
+    display:block;
 }
 
 #search{
@@ -126,26 +146,48 @@ body{
 #classify>ul{
     display: flex;
     list-style: none;
-    margin-left: 32px;
+    flex-direction: row;
+    justify-content: space-around;
+    /* margin-left: 32px; */
 }
 
 #classify>ul>li{
-    margin-left: 45px;
-    margin-right: 40px;
+    /* margin-left: 45px;
+    margin-right: 45px; */
     font-size: 17px;
+    /* font-color: green; */
+}
+#classify>ul>li>a{
+    text-decoration: none;
+}
+#frame{
+    display: block;
+    width: 880px; 
+    height: 2000px;
+    border: 1px solid grey;
+    box-shadow: rgba(193, 193, 193, 0.61) 4px 4px 3px 2px ;
+    border-radius: 5px;
+    margin: 20px auto; 
+    /* width: 800px;
+    margin: 50px auto;
+    height: 300px;
+    border:  #929090 solid 1px;
+    padding: 12px;
+    box-shadow: rgba(193, 193, 193, 0.61) 4px 4px 3px 2px ;
+    border-radius: 5px; */
 }
 
-#classify>ul>li:nth-child(2){
+/* #classify>ul>li:nth-child(2){
     padding-left: 18px;
     margin-right: 38px;
 }
 
 #classify>ul>li:nth-child(3){
     margin-right: 38px;
-}
+} */
 
 #classify_divider{
-    width: 910px;
+    width: 950px;
     margin:15px auto;
     height: 1px;
     background-color: #d2cece;
@@ -153,8 +195,127 @@ body{
     padding: 0;
     justify-content: space-around;
     position: relative;
-    left: -24px;
+    left: 20px;
 }
+
+.fix{
+    width: 50px;
+    height: 240px;
+    position: fixed;
+    right: 230px;
+    bottom: 40px;
+    /* border: 1px solid green; */
+}
+
+.fix>section{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    /* border: 1px solid green; */
+    background-color: #ecf2fc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.fix>section>section{
+    width: 100%;
+    height: 100%;
+    font-size: 26px;
+    color: #91a8c9;
+    /* text-align: center; */
+    /* position: absolute; */
+    padding-top: 11px;
+    padding-left: 11px;
+    
+}
+
+.one>p,.two>p{
+    display: block;
+    font-size: 15px;
+    width:50px;
+    height: 50px;
+    /* border: 1px solid green; */
+    border-radius: 10px;
+    position: relative;
+    top: 50px;
+    left: 0px;
+    z-index: 9999;
+    text-align: center;
+    padding-top: 13px;
+    background-color:#91a8c9;
+    color: #ecf2fc;
+    /* font-size: 26px; */
+}
+.three>p,.four>p{
+    display: block;
+    font-size: 17px;
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid green; */
+    position: relative;
+    top: 50px;
+    left: 0px;
+    z-index: 9999;
+    text-align: center;
+    padding-top: 1px;
+    background-color:#91a8c9;
+    color: #ecf2fc;
+    /* font-size: 26px; */
+}
+
+.one:hover .one_g{
+    display: none;
+    /* font-size: large; */
+}
+.one:hover  .one_p{
+    transform: translateY(-100%);
+    /* 过度属性 */
+    transition:  all 0s linear;
+}
+
+.two:hover .two_g{
+    display: none;
+    /* font-size: large; */
+}
+.two:hover  .two_p{
+    transform: translateY(-100%);
+    /* 过度属性 */
+    transition:  all 0s linear;
+}
+
+.three:hover .three_g{
+    display: none;
+    /* font-size: large; */
+}
+.three:hover  .three_p{
+    transform: translateY(-100%);
+    /* 过度属性 */
+    transition:  all 0s linear;
+}
+
+.four:hover .four_g{
+    display: none;
+    /* font-size: large; */
+}
+.four:hover  .four_p{
+    transform: translateY(-100%);
+    /* 过度属性 */
+    transition:  all 0s linear;
+}
+
+/* tree */
+/* .tree_{
+    position: fixed;
+    left: 10px;
+    top: 200px;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #779861;
+}
+.glyphicon-tree-conifer{
+    color: #779861;
+    font-size: 200px;
+} */
 
 .classify_in_divider{
     /*display: inline-block;*/
@@ -209,4 +370,70 @@ body{
     display: inline-block;
     margin-right: 15px;
     margin-left: 15px;
+}
+
+
+/* 评论 */
+.comments_form{
+    width: 880px; 
+    height: 130px;
+    /* border: 1px solid red; */
+    margin: 15px auto;
+}
+/* 用户名 */
+.Username_title{
+    width: 500px; 
+    height: 30px;
+    /* border: 1px solid red; */
+}
+
+.Username_title>p{
+    margin-left: 69px;
+    margin-top: 10px;
+    font-size: 15px;
+    display: inline;
+    /* border: 1px solid red; */
+}
+.Username_title>:first-child{
+    
+    font-weight: bold;
+    color: #779861;
+    margin-left: 60px;
+    font-size: 20px;
+}
+
+.Username_title>:last-child{
+    font-weight: bold;
+    color: #779861;
+    margin-left: 60px;
+    font-size: 20px;
+}
+
+/* 评论框 */
+.text_input{
+ width: 750px;
+ height: 80px;
+ /* border: 1px solid red; */
+ margin: 8px auto;
+}
+.text_first{
+    width: 650px;
+    height: 100%;
+    border: 1px solid red;
+    background-color: #f4f5f7;
+    border-radius: 5px;
+    padding-top: 0px;
+    margin-top: 0px;
+    text-align: start;
+}
+.text_second{
+    width: 80px;
+    height: 100%;
+    /* border: 1px solid #779861; */
+    float: right;
+    background-color: #779861;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
 }

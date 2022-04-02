@@ -1,0 +1,186 @@
+/*重置默认的外边距和内边距*/
+*{
+	margin:0;
+	padding:0;
+}
+/*常用标签的样式重置*/
+i{
+	font-style: normal;
+}
+a{
+	text-decoration: none;
+}
+input{
+	/*去除文本框获取焦点时的边框默认样式*/
+	outline: none;
+	border:none;
+
+}
+
+html{
+	/*width: 1520px;*/
+}
+/*设定html和body的宽度为100%*/
+body{
+	width:100%;
+	font-size: 14px;
+}
+
+/*版心*/
+.container{
+	width:100%;
+	margin:0 auto;
+
+}
+/*头部*/
+.header{
+	width:100%;
+	height: 110px;
+	box-shadow: 2px 2px 10px rgba(111,111,111,.3);
+	position: relative;
+
+}
+/*Logo*/
+.header .logo{
+	display: block;
+	width: 248px;
+	height:68px;
+	background: url("./img/logo1.jpg") center/cover no-repeat;
+	/*文本缩进*/
+	text-indent: -100px;
+	position: absolute;
+	top:18px;
+	left:112px;
+
+}
+
+.header .desc{
+
+	font-size: 23px;
+	line-height: 34px;
+	/* border-left: 1px solid #ccc; */
+	position: absolute;
+	left: 340px;
+	top:37px;
+	padding-left: 45px;
+	/* font-weight:bold; */
+}
+/*-----------------------------------你农我农注册模块---------------------------*/
+.register{
+	width:400px;
+	margin: 0 auto;
+	padding-top: 40px;
+}
+/*文本框注册*/
+.register .user .userTop{
+	border: 1px solid #ccc;
+	line-height: 52px;
+	padding-left: 10px;
+	position: relative;
+}
+.register .user .userTop input{
+	padding-left:20px;
+}
+.register .user .userTop.error{
+	border: 1px solid red;
+}
+.register .user .userTop.right i{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/right.png);
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -10px;
+}
+/*注册提示信息*/
+.register .user .tip{
+	height: 30px;
+	line-height: 30px;
+	color: #ccc;
+	font-size: 12px;
+}
+.register .user .tip i{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.register .user .tip.hidden{
+	visibility: hidden;
+}
+.register .user .tip.default i{
+	background: url(../images/default.png) no-repeat center center;
+}
+.register .user .tip.error i{
+	background: url(../images/error.png) no-repeat center center;
+}
+.register .user .tip.error span{
+	color: rgb(89, 130, 63);
+}
+
+/*密码安全级别提示*/
+.register .user .tip.ruo i{
+	background: url(../images/ruo.png) no-repeat center center;
+}
+.register .user .tip.zhong i{
+	background: url(../images/zhong.png) no-repeat center center;
+}
+.register .user .tip.qiang i{
+	background: url(../images/qiang.png) no-repeat center center;
+}
+/*-------同意注册---------*/
+.register .user.hehe .userTop{
+	border:none;
+	line-height:20px;
+}
+/*-----------按钮样式------------*/
+.btn{
+	width:400px;
+	height:40px;
+	color:#fff;
+	background: rgb(89, 130, 63);
+	font-size:24px;
+	border:0;
+	cursor:pointer;
+}
+.btn:hover{
+	background: rgb(53, 82, 36);
+}
+
+.tail>ul{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	margin-top: 25px;
+
+}
+.tail>ul>li{
+	margin-top: 150px;
+	padding-right: 10px;
+	margin-left:  10px;
+	border-right: rgba(128, 128, 128, 0.76) 1px solid;
+	color:rgba(128, 128, 128, 0.76) ;
+	font-size: 10px;
+}
+
+.tail>ul>li:last-child{
+	border: none;
+}
+
+.tail>ul>li:hover{
+	color: #3c3f41;
+}
+
+.bot{
+	float: left;
+	transform: translateX(603px) translateY(23px);
+	color:rgba(128, 128, 128, 0.76) ;
+	font-size: 10px;
+	padding-bottom: 20px;
+}
+
+
+
+

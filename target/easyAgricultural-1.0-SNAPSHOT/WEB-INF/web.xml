@@ -21,5 +21,15 @@
         <servlet-name>MarketServlet</servlet-name>
         <url-pattern>/market</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SignUpServlet</servlet-name>
+        <servlet-class>com.eaproject.controller.SignUpServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SignUpServlet</servlet-name>
+        <url-pattern>/SignUp</url-pattern>
+    </servlet-mapping>
 </web-app>
 

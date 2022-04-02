@@ -1,0 +1,173 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常态服务</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/voluntary.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./fa-icon/css/all.min.css">
+    <link rel="icon" href="./img/zhi.ico">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/activity16.css">
+    <script src="./js/to-top.js"></script>
+    <script>
+        window.onload = function () {
+            var backTop = document.getElementById("backTop");
+            var f = go_back;
+            f(backTop);
+
+           
+        };
+    </script>
+</head>
+
+<body>
+    <div class="top-bar ">
+        <div class="logo"></div>
+        <ul class="top-list w">
+            <li>
+                <a href="../../home.html">首页</a>
+            </li>
+            <li>
+                <a id="activity" href="./voluntary.html">集体活动</a>
+            </li>
+            <li>
+                <a id="serve" href="./normalServer.html">常态服务</a>
+            </li>
+            <li>
+                <a id="chose" href="./submitted_project.html">查询已报项目</a>
+            </li>
+            <li>
+                <a id="commend" href="./commend.html">优秀表彰</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="chooce w">
+        <div class="left-box">
+            <div class="left-box-top">
+                <div class="left-top-img"></div>
+                <div class="right-top">
+                    <h1 class="titleH1">安抚受伤的病人</h1>
+                    <table class="tableBox">
+                        <tr>
+                            <th>项目编号:</th>
+                            <td>
+                                <span>P43082220220281369</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>服务类别:</th>
+                            <td>
+                                <!-- <span class="containText">农户</span> -->
+                                <span class="containText">关爱特殊群体</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="middle-box">
+                <table class="middleTable">
+                    <tr>
+                        <th class="titleMidle">项目地点：</th>
+                        <td>江苏省常州市钟楼区中吴大道1801号</td>
+                        <td>发布日期：</td>
+                        <td>2022-04-20</td>
+                    </tr>
+                    <tr>
+                        <th class="titleMidle">项目日期：</th>
+                        <td>2022-04-20至2022-05-10</td>
+                        <td>招募日期：</td>
+                        <td>2022-04-20至2022-04-30</td>
+                    </tr>
+                    <tr>
+                        <th class="titleMidle">服务对象：</th>
+                        <td>特殊群众</td>
+                        <td>志愿者保障：</td>
+                        <td>志愿服务证书</td>
+                    </tr>
+
+                </table>
+                <div class="server-data">
+                    <span>服务时间描述：</span>
+                    <span>2022年4月20日开始至结束</span>
+                </div>
+            </div>
+            <div class="signup-box">
+                <table class="table1">
+                    <tr>
+                        <th align="left">岗位1：<p class="s-p">安抚受伤的病人</p></th>
+                        <th>计划招募：<p class="s-p">10</p></th>
+                        <th>已招募：<p class="s-p">0</p></th>
+                        <th><a id="sup" class="signa" href="javascript:void(0);" onclick="signUp(obj)" >我要报名</a></th>
+                    </tr>
+                </table>
+                <table class="table2"> 
+                        <tr class="table2-tr">
+                            <th class="table-th">岗位ID：</th>
+                            <th class="table-th">岗位描述：</th>
+                            <th class="table-th">岗位条件：</th>
+                        </tr>
+                        <tr class="table2-tr tr2">
+                            <td>P51132420220283200-01</td>
+                            <td>安抚受伤的病人</td>
+                            <td>身体健康，热爱运动</td>
+                        </tr>
+                </table>
+            </div>
+            <div class="bottom-box">
+                <div class="box1">
+                   <div class="box-contain"><p class="pc">
+                       项目详情</p></div>
+                </div>
+                <div class="box2">
+                    安抚受伤的病人
+                </div>
+            </div>
+        </div>
+        <div class="right-box w2">
+            <div class="publish-perple-box">
+                <h2 class="linkp">项目联系人</h2>
+                <div class="people">
+                    <h3 class="name-p">房武</h3>
+                    <p class="phone">电话：15369192031</p>
+                </div>
+            </div>
+            <div class="publish-location-box">
+                <h2 class="linkp">项目地址</h2>
+                <p class="location">江苏省常州市钟楼区中吴大道1801号</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="sider">
+        <div class="refresh">
+            <a class="xin" href="./activity16.html">
+                <i class="fa fa-refresh" aria-hidden="true"></i>
+                <span class="shua">刷新</span>
+            </a>
+        </div>
+        <div id="backTop">
+            <div class="btop">
+                <i class="re fa fa-arrow-circle-left" aria-hidden="true"></i>
+                <span class="t">顶部</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+       
+       var obj = {
+           valueI:'申请中'
+       }
+       
+        function signUp(obj){
+            var sup =document.getElementById("sup");       
+            sup.innerText =obj.valueI;
+            sup.style.backgroundColor='rgba(255, 0, 0, 0.938)';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel = "stylesheet" href = "./register.css"/>
+	<script src = "./register.js"></script>
+
+</head>
+<body>
+<!--京东头部-->
+<div class="header">
+	<a class="logo" href="#"></a>
+	<div class="desc">欢迎注册</div>
+</div>
+<!--版心-->
+<form action="/SignUp" method="GET" autocomplete="off">
+	<div class="container">
+		<!--注册模块-->
+		<div class = "register">
+			<!---------用户名注册------------->
+			<div class = "user">
+				<!--输入框-->
+				<div class = "userTop">
+					<label for = "userName">用 户 名</label>
+					<input type = "text" id="userName" placeholder="您的账户名和登录名"  name="userName" autofocus/>
+					<i></i>
+				</div>
+				<!--提示信息-->
+				<div class = "tip">
+					<i></i>
+					<span></span>
+				</div>
+			</div>
+			<!---------密码------------->
+			<div class = "user">
+				<!--输入框-->
+				<div class = "userTop">
+					<label for = "psd">设 置 密 码</label>
+					<input type = "password" id="psd" placeholder="建议至少两种字符组合" name="passWord"/>
+					<i></i>
+				</div>
+				<!--提示信息-->
+				<div class = "tip">
+					<i></i>
+					<span></span>
+				</div>
+			</div>
+			<!---------密码是否一致------------->
+			<div class = "user">
+				<!--输入框-->
+				<div class = "userTop">
+					<label for = "psd1">设 置 密 码</label>
+					<input type = "password" id="psd1" placeholder="请确认您的密码" name="password"/>
+					<i></i>
+				</div>
+				<!--提示信息-->
+				<div class = "tip">
+					<i></i>
+					<span></span>
+				</div>
+			</div>
+			<!---------邮箱验证------------->
+			<div class = "user">
+				<!--输入框-->
+				<div class = "userTop">
+					<label for = "nickname">昵  称</label>
+					<input type = "text" id="nickname" placeholder="输入您的昵称" name="nickname"/>
+					<i></i>
+				</div>
+				<!--提示信息-->
+				<div class = "tip">
+					<i></i>
+					<span></span>
+				</div>
+			</div>
+			<!---------手机验证------------->
+			<div class = "user">
+				<!--输入框-->
+				<div class = "userTop">
+					<label for = "phone">手 机 号</label>
+					<input type = "text" id="phone" placeholder="输入您的手机号" name="phone"/>
+					<i></i>
+				</div>
+				<!--提示信息-->
+				<div class = "tip">
+					<i></i>
+					<span></span>
+				</div>
+			</div>
+			<!---------同意注册------------->
+			<div class = "user hehe">
+				<!--输入框-->
+				<div class = "userTop">
+					<input type="checkbox"  id="ck" />
+					<span> 我已阅读并同意<a href="#">《你农我农注册协议》</a></span>
+				</div>
+				<!--提示信息-->
+				<div class = "tip">
+					<i></i>
+					<span></span>
+				</div>
+			</div>
+			<!--注册按钮-->
+			<button id = "btn" class = "btn" type="submit">注册</button>
+		</div>
+	</div>
+</form>
+<div class="tail ">
+	<ul>
+		<li>关于我们</li>
+		<li>联系我们</li>
+		<li>人才招聘</li>
+		<li>商家入驻</li>
+		<li>广告服务</li>
+		<li>友情链接</li>
+		<li>销售联盟</li>
+	</ul>
+</div>
+
+<div class="bot">
+	<div class="Copyright ">Copyright@2022-2022&nbsp;&nbsp;你农我农.com&nbsp;版权所有</div>
+</div>
+
+</body>
+</html>

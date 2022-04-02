@@ -1,5 +1,7 @@
 package com.eaproject.controller;
 
+import com.eaproject.dao.SignUpDao;
+
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
@@ -27,6 +29,12 @@ public class SignUpServlet extends HttpServlet {
             out.println("</body></html>");
             System.out.println("SignUpServlet表示：输入有误，请重新输入！");
 //            resp.sendRedirect("/");
+        }else{
+            System.out.println(userName);
+            SignUpDao signUpDao = new SignUpDao(userName,passWord,phone,nickname,0,0);
+
+            System.out.println("SingUpServlet发来贺电：注册成功");
+            response.sendRedirect("/home.html");
         }
 
     }

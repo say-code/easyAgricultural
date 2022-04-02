@@ -3,12 +3,19 @@ body{
     weight:100vh;
 }
 
+body{
+    height:100vh;
+    weight:100vh;
+}
+
 #lead{
+    /*margin-top:-10px;*/
+    /*margin-left: -1%;*/
     width: 100%;
     background-color: #ffffff;
-    margin-top: 0;
+    /*margin-top: 0;*/
     height: 68px;
-    box-shadow: rgba(193, 193, 193, 0.61) 10px 10px 15px 5px ;
+    box-shadow: rgba(193, 193, 193, 0.61) 10px 2px 5px 5px ;
     display:flex;
     justify-content: space-around;
 }
@@ -24,7 +31,7 @@ body{
     justify-content: space-around;
     margin-top: 21px;
     font-size:17px;
-    margin-left: -75px;
+    margin-left: -105px;
     text-decoration: none;
 
 
@@ -58,6 +65,7 @@ body{
 }
 
 #lead_slogan{
+    width: 300px;
     font-size: 24px;
     margin-left: 105px;
     font-weight: bold;
@@ -70,7 +78,7 @@ body{
 #lead_person{
     display:flex;
     justify-content: space-around;
-    margin-top: 19px;
+    margin-top: 18px;
     font-size:17px;
     margin-left: -75px;
 }
@@ -102,7 +110,9 @@ body{
 }
 
 #saleImg{
-    margin:45px 0 0 720px;
+    width: 480px;
+    margin:auto;
+    margin-top: 55px;
 }
 
 #saleImg>img{
@@ -147,7 +157,7 @@ body{
     float: left;
     width: 220px;
     margin-left: 10px;
-    margin-top: 15px;
+    margin-top: 38px;
 }
 
 #policy_sidebar>ul{
@@ -163,17 +173,32 @@ body{
     text-align: center;
     color: rgba(89, 130, 63, 0.81);
     font-weight: bold;
+    text-decoration: none;
 }
+
+
+#policy_sidebar>ul>li>a{
+    text-decoration: none;
+    color: rgba(89, 130, 63, 0.81);
+}
+
+#policy_sidebar>ul>li:hover a{
+    color: white;
+    /* background-color: rgba(89, 130, 63, 0.81); */
+    text-decoration: none;
+}
+
+/* 
+#policy_sidebar>ul>li:first-child{
+    color: white;
+    background-color: rgba(89, 130, 63, 0.81);
+} */
 
 #policy_sidebar>ul>li:hover{
     color: white;
     background-color: rgba(89, 130, 63, 0.81);
 }
 
-#policy_sidebar>ul>li:first-child{
-    color: white;
-    background-color: rgba(89, 130, 63, 0.81);
-}
 #policy_message{
     border-radius: 5px;
     display: inline-block;
@@ -181,7 +206,7 @@ body{
     /*float: right;*/
     width: 790px;
     margin-top: 25px;
-    background-color: white;
+    /* background-color: white; */
     margin-left: 15px;
 }
 
@@ -222,4 +247,9 @@ body{
 #policy_message>ul>li:nth-child(4){
     background-color: rgba(239, 239, 239, 0.88);
     height: 110px;
+}
+
+#policy_frame{
+    height: 1056px;
+    width: 845px;
 }
