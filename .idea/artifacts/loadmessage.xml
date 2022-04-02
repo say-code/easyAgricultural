@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact name="loadmessage">
+    <output-path>$PROJECT_DIR$/out/artifacts/loadmessage</output-path>
+    <root id="root">
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/java/com/eaproject/dao/LoadMessageDao_MARA.java" />
+    </root>
+  </artifact>
+</component>

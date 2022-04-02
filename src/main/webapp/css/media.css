@@ -1,0 +1,16 @@
+@media screen and (max-width: 768px){
+    .matter{
+        height: 956px;
+        background: no-repeat left top url("../image/banner.png") #EA3551
+    }
+    .login{
+       margin:555px 13%
+    }
+    .tail{display: none}
+}
+
+@media screen and (max-width: 1080px) and (min-width: 769px) {
+    .login{
+        margin-right: 5px;
+    }
+}

@@ -1,0 +1,26 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="easyAgricultural:war exploded">
+    <output-path>$PROJECT_DIR$/target/easyAgricultural-1.0-SNAPSHOT</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>easyAgricultural</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="easyAgricultural" />
+        </element>
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/webapp/index.html" />
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/easyAgricultural-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="easyAgricultural/web/Web" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/mysql-connector-java-5.1.46.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/java/com/eaproject/util/CrawlerTimerStart.java" />
+    </root>
+  </artifact>
+</component>

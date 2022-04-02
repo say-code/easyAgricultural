@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="easyAgricultural:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>easyAgricultural</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="easyAgricultural-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="easyAgricultural:war exploded" />
+    </root>
+  </artifact>
+</component>

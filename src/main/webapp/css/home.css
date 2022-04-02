@@ -1,0 +1,266 @@
+/*body{*/
+/*    background-color:rgba(239, 239, 239, 0.88) ;*/
+/*}*/
+
+/*#person{*/
+/*    display: inline-block;*/
+/*    color: rgba(239, 239, 239, 0.88);*/
+/*    background-color: #3e3d3d;*/
+/*    width: 100%;*/
+/*    font-size: 15px;*/
+/*    padding: 0;*/
+/*    height:30px;*/
+
+/*}*/
+/*#person>p{*/
+/*    margin-top:7px;*/
+/*    display: flow;*/
+/*    float: right;*/
+/*    line-height: 12px;*/
+/*}*/
+
+/*#person>p>a{*/
+/*    display: flow;*/
+/*    float: right;*/
+/*    color: rgba(239, 239, 239, 0.88);*/
+/*    margin-left: 10px;*/
+/*    margin-right: 10px;*/
+/*}*/
+
+/*#title{*/
+/*    display: flex;*/
+/*    margin: 0;*/
+/*    width: 100%;*/
+/*    justify-content: space-around;*/
+/*    height: 100px;*/
+/*    !*border: #EA3551 solid 1px;*!*/
+/*    background-color: rgba(239, 239, 239, 0.88);*/
+/*}*/
+
+
+/*#title_img>img{*/
+
+/*    height: 91px;*/
+/*    margin-top: 3px;*/
+/*}*/
+
+/*#title_slogan{*/
+/*    font-size: 27px;*/
+/*    margin-left: 105px;*/
+/*    font-weight: bold;*/
+/*    color: rgb(89, 130, 63);*/
+/*    margin-top: 27px;*/
+/*!*    96b97d green title*!*/
+
+/*}*/
+
+
+/*#lead_ul{*/
+/*    margin: 0;*/
+/*    list-style: none;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*#lead_ul>li{*/
+/*    color: #fffcfc;*/
+/*    font-size: 21px;*/
+/*    margin-left: 3%;*/
+/*    margin-right: 3%;*/
+/*    margin-top: 3px;*/
+
+/*}*/
+
+/*#lead_ul>li>a{*/
+/*    text-decoration: none;*/
+/*    color: white;*/
+/*}*/
+
+/*#lead_ul>li>a:hover{*/
+/*    !*font-weight: bolder;*!*/
+/*    color: #d2d2d2;*/
+/*}*/
+
+body{
+    height:100vh;
+    weight:100vh;
+}
+
+#lead{
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 0;
+    height: 68px;
+    box-shadow: rgba(193, 193, 193, 0.61) 10px 10px 15px 5px ;
+    display:flex;
+    justify-content: space-around;
+}
+
+#lead_img>img{
+    height:65px;
+
+}
+
+#lead_ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+    margin-top: 21px;
+    font-size:17px;
+    margin-left: -75px;
+    text-decoration: none;
+
+
+}
+
+#lead_ul>li{
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+#lead_ul>li>a{
+    text-decoration: none;
+    color:black;
+}
+
+#lead_ul>li>div{
+    margin-top: 12px;
+    margin-left:15%;
+    width:70%;
+    border:rgb(89, 130, 63) solid 1px;
+    display:none;
+}
+
+#lead_ul>li:hover a{
+    color: rgb(89, 130, 63);
+}
+
+#lead_ul>li:hover div{
+    display: block;
+}
+
+#lead_slogan{
+        font-size: 24px;
+        margin-left: 105px;
+        font-weight: bold;
+        color: rgb(89, 130, 63);
+        margin-top: 16px;
+    /*    96b97d green title*/
+
+}
+
+#lead_person{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 19px;
+    font-size:17px;
+    margin-left: -75px;
+}
+
+#lead_person>div{
+    margin-right: 9px;
+    margin-left: 9px;
+}
+
+#lead_person>div>p>a{
+    text-decoration: none;
+    color:black;
+}
+
+#lead_person>div>div{
+    margin-top: 12px;
+    margin-left:15%;
+    width:70%;
+    border:rgb(89, 130, 63) solid 1px;
+    display:none;
+}
+
+#lead_person>div:hover p>a{
+    color: rgb(89, 130, 63);
+}
+
+#lead_person>div:hover div{
+    display:block;
+}
+
+
+/*#cons{*/
+/*    margin-left: 14%;*/
+/*    width: 72%;*/
+/*    height: 520px;*/
+/*    align-content: center;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*#cons_hide{*/
+
+/*    width: 300%;*/
+/*    height: 520px;*/
+/*    animation: mykeyframs 9s infinite;*/
+/*}*/
+
+/*#cons_hide>img{*/
+/*    width: 33%;*/
+/*    height: 520px;*/
+
+/*}*/
+
+
+/*@keyframes mykeyframs {*/
+/*    45%{*/
+/*        transform: translate(-33%);*/
+/*    }*/
+/*    90%{*/
+/*        transform: translate(-66%);*/
+/*    }*/
+/*    100%{*/
+/*        transform: translate(0px);*/
+/*    }*/
+/*}*/
+
+
+#introduce{
+    background-color: white;
+    margin:auto;
+    width: 68%;
+    height: 1040px;
+    margin-top: 34px;
+    border-radius: 12px;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-shadow: #c1c1c1 10px 10px 30px 5px ;
+}
+
+
+
+#introduce>img{
+    width: 45%;
+    margin-top: 35px;
+    display: flow;
+    float: left;
+    margin-right: 5%;
+    border-radius: 8px ;
+    box-shadow: #c1c1c1 10px 10px 30px 5px ;
+}
+
+
+
+#introduce>h1{
+    color: rgb(89, 130, 63);
+    padding-top: 12px;
+    display: flow;
+    float: left;
+    margin-top: 5%;
+}
+
+#introduce>p{
+    display: inline-block;
+    font-size: 19px;
+    padding-right: 5%;
+    display: flow;
+    width: 45%;
+    float: left;
+    line-height: 29px;
+    margin-top: 15px;
+}
