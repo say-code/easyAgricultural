@@ -1,0 +1,255 @@
+body{
+    height:100vh;
+    weight:100vh;
+}
+
+body{
+    height:100vh;
+    weight:100vh;
+}
+
+#lead{
+    /*margin-top:-10px;*/
+    /*margin-left: -1%;*/
+    width: 100%;
+    background-color: #ffffff;
+    /*margin-top: 0;*/
+    height: 68px;
+    box-shadow: rgba(193, 193, 193, 0.61) 10px 2px 5px 5px ;
+    display:flex;
+    justify-content: space-around;
+}
+
+#lead_img>img{
+    height:65px;
+
+}
+
+#lead_ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+    margin-top: 21px;
+    font-size:17px;
+    margin-left: -105px;
+    text-decoration: none;
+
+
+}
+
+#lead_ul>li{
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+#lead_ul>li>a{
+    text-decoration: none;
+    color:black;
+}
+
+#lead_ul>li>div{
+    margin-top: 12px;
+    margin-left:15%;
+    width:70%;
+    border:rgb(89, 130, 63) solid 1px;
+    display:none;
+}
+
+#lead_ul>li:hover a{
+    color: rgb(89, 130, 63);
+}
+
+#lead_ul>li:hover div{
+    display: block;
+}
+
+#lead_slogan{
+    width: 300px;
+    font-size: 24px;
+    margin-left: 105px;
+    font-weight: bold;
+    color: rgb(89, 130, 63);
+    margin-top: 16px;
+    /*    96b97d green title*/
+
+}
+
+#lead_person{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 18px;
+    font-size:17px;
+    margin-left: -75px;
+}
+
+#lead_person>div{
+    margin-right: 9px;
+    margin-left: 9px;
+}
+
+#lead_person>div>p>a{
+    text-decoration: none;
+    color:black;
+}
+
+#lead_person>div>div{
+    /*margin-top: -2px;*/
+    margin-left:15%;
+    width:70%;
+    border:rgb(89, 130, 63) solid 1px;
+    display:none;
+}
+
+#lead_person>div:hover p>a{
+    color: rgb(89, 130, 63);
+}
+
+#lead_person>div:hover div{
+    display:block;
+}
+
+#saleImg{
+    width: 480px;
+    margin:auto;
+    margin-top: 55px;
+}
+
+#saleImg>img{
+    width:480px;
+    /*height:100px;*/
+    box-shadow: rgba(193, 193, 193, 0.61) 10px 10px 15px 5px ;
+
+}
+
+#policy{
+    box-shadow: rgba(193, 193, 193, 0.61) 10px 10px 15px 5px ;
+    background-color: rgba(239, 239, 239, 0.88);
+    width: 1100px;
+    margin: 50px auto auto;
+}
+
+#policy_title{
+    width: 1100px;
+    height: 75px;
+    margin: 30px auto auto;
+    text-align: center;
+    font-size: 26px;
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#policy_title>p{
+    display: inline-block;
+}
+#policy_title>span{
+    display: inline-block;
+    background-color: rgb(199, 199, 199);
+    width: 350px;
+    height: 5px;
+    margin-top: 12px;
+}
+
+
+#policy_sidebar{
+    display: flow;
+    float: left;
+    width: 220px;
+    margin-left: 10px;
+    margin-top: 38px;
+}
+
+#policy_sidebar>ul{
+    list-style: none;
+}
+
+#policy_sidebar>ul>li{
+    height: 55px;
+    background-color: white;
+    margin-top: 15px;
+    font-size: 17px;
+    padding-top: 5px;
+    text-align: center;
+    color: rgba(89, 130, 63, 0.81);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+#policy_sidebar>ul>li>a{
+    text-decoration: none;
+    color: rgba(89, 130, 63, 0.81);
+}
+
+#policy_sidebar>ul>li:hover a{
+    color: white;
+    /* background-color: rgba(89, 130, 63, 0.81); */
+    text-decoration: none;
+}
+
+/* 
+#policy_sidebar>ul>li:first-child{
+    color: white;
+    background-color: rgba(89, 130, 63, 0.81);
+} */
+
+#policy_sidebar>ul>li:hover{
+    color: white;
+    background-color: rgba(89, 130, 63, 0.81);
+}
+
+#policy_message{
+    border-radius: 5px;
+    display: inline-block;
+    /*display: flow;*/
+    /*float: right;*/
+    width: 790px;
+    margin-top: 25px;
+    /* background-color: white; */
+    margin-left: 15px;
+}
+
+#policy_message>ul{
+    list-style: none;
+    margin-top: 7px;
+}
+
+#policy_message>ul>li{
+    width: 720px;
+    height: 82px;
+    background-color: white;
+    font-size: 15px;
+    padding-top: 14px;
+    padding-left: 15px;
+
+}
+
+#policy_message>ul>li>a{
+    color: black;
+    font-weight: bold;
+}
+
+#policy_message>ul>li:hover a{
+    color: rgb(89, 130, 63);
+}
+#policy_message>ul>li>p{
+    color: rgb(89, 130, 63);
+}
+
+#policy_message>ul>li:nth-child(2),
+#policy_message>ul>li:nth-child(6),
+#policy_message>ul>li:nth-child(8),
+#policy_message>ul>li:nth-child(10){
+    background-color: rgba(239, 239, 239, 0.88);
+}
+
+#policy_message>ul>li:nth-child(4){
+    background-color: rgba(239, 239, 239, 0.88);
+    height: 110px;
+}
+
+#policy_frame{
+    height: 1056px;
+    width: 845px;
+}

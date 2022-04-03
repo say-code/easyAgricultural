@@ -1,0 +1,198 @@
+.title{
+    display: flex;
+    margin-left: 0;
+    width: 55%;
+    justify-content: center;
+    height: 94px;
+
+    /*border: red 1px solid;*/
+}
+
+#title_img>img{
+    /*width: 181px;*/
+    height: 91px;
+}
+
+#title_p>p{
+    margin-top: 25px;
+    padding-top: 5px;
+    font-size:25px;
+    margin-left: 19px;
+    color: gray;
+    width: 100px;
+
+}
+
+.matter{
+    width: 100%;
+    height: 478px;
+    border: #3c3f41 1px solid;
+    position: static;
+    /*display: flow;*/
+    background: no-repeat center top url("../image/ttl.png") rgb(89, 130, 63);
+}
+.matter>img{
+    height: 100%;
+    margin-top: 0;
+    /*display: flow;*/
+    /*float: left;*/
+}
+
+.login{
+    background-color: white;
+    width: 385px;
+    height: 298px;
+    display: flow;
+    float: right;
+    margin-right: 17%;
+    margin-top: 45px;
+    /*position: relative ;*/
+    /*left: 1091px;*/
+    /*top: 45px;*/
+}
+
+#login_title{
+    color: gray;
+    /*display: flow;*/
+    /*float: left;*/
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 20px;
+    margin-top: 0;
+    padding-top: 0;
+    position: static;
+    width: 200px;
+    height: 50px;
+}
+
+#login_title>p{
+    margin-top: 18px;
+    margin-left: 5px;
+    display: flow;
+    float: left;
+}
+
+#login_signUp{
+    color: rgb(89, 130, 63);
+    display: inline-block;
+    /*display: flow;*/
+    /*float: right;*/
+    height: 29px;
+    width: 85px;
+    /*border: orange 1px solid;*/
+    margin-right: 0;
+    margin-top: 14px;
+    margin-left: 72px;
+}
+
+#login_signUp>img{
+    height: 14px;
+    float: left;
+    margin-top: 3px;
+    margin-left: 4px;
+}
+
+#login_signUp>div{
+    font-size: 13px;
+    display: flow;
+    float: right;
+    margin-right: 10px;
+    margin-top: 1px;
+}
+
+.login_input{
+    display: flow;
+    float: left;
+    height: 39px;
+    width: 355px;
+    margin-left: 10px;
+    border: #D2D2D2 1px solid;
+    position:relative;
+    margin-top: 20px;
+
+}
+
+.login_input>img{
+height: 39px;
+}
+
+.login_input>input{
+    height: 35px;
+    margin-top: 0;
+    width: 299px;
+    position: relative;
+    top: -15px;
+    left: -4px;
+    border: none;
+    margin-left: 2px;
+    outline: none;
+}
+
+#login_autoLogin{
+    margin-top: 11px;
+    height: 35px;
+    width: 100%;
+    display: flow;
+    float: left;
+
+}
+
+#login_autoLogin>input{
+    margin-left: 15px;
+    margin-top: 8px;
+    position: relative;
+    top: 2px;
+}
+#login_autoLogin>p{
+    display: inline-block;
+    color: gray;
+    font-size: 13px;
+    margin-top: 9px;
+    margin-left: -5px;
+}
+
+#login_autoLogin_pass{
+    display: flow;
+    float: right;
+    margin-right: 12px;
+}
+
+#login_buttom{
+    background-color: rgb(89, 130, 63);
+    color: white;
+    display: flow;
+    float: left;
+    height: 41px;
+    width: 355px;
+    margin-left: 10px;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+#login_buttom>p{
+    line-height: 1px;
+}
+
+.tail>ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+
+}
+.tail>ul>li{
+    padding-right: 10px;
+    margin-left:  10px;
+    border-right: rgba(128, 128, 128, 0.76) 1px solid;
+    color:rgba(128, 128, 128, 0.76) ;
+    font-size: 15px;
+}
+
+.tail>ul>li:last-child{
+    border: none;
+}
+
+.tail>ul>li:hover{
+    color: #3c3f41;
+}

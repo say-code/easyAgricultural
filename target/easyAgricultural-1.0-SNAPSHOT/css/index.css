@@ -29,7 +29,7 @@
     border: #3c3f41 1px solid;
     position: static;
     /*display: flow;*/
-    background: no-repeat center top url("../image/banner.png") #e83955;
+    background: no-repeat center top url("../image/ttl.png") rgb(89, 130, 63);
 }
 .matter>img{
     height: 100%;
@@ -73,7 +73,7 @@
 }
 
 #login_signUp{
-    color: red;
+    color: rgb(89, 130, 63);
     display: inline-block;
     /*display: flow;*/
     /*float: right;*/
@@ -158,7 +158,7 @@ height: 39px;
 }
 
 #login_buttom{
-    background-color: #EA3551;
+    background-color: rgb(89, 130, 63);
     color: white;
     display: flow;
     float: left;

@@ -172,9 +172,10 @@ body{
 }
 
 #lead_person>div>div{
-    margin-top: 12px;
+    margin-top: -19px;
     margin-left:15%;
     width:70%;
+    height: 3px;
     border:rgb(89, 130, 63) solid 1px;
     display:none;
 }
@@ -223,8 +224,8 @@ body{
 #introduce{
     background-color: white;
     margin:auto;
-    width: 80%;
-    height: 1600px;
+    width: 1200px;
+    height: 1400px;
     margin-top: 34px;
     border-radius: 35px;
     padding-left: 2%;
@@ -237,11 +238,12 @@ body{
 }
 
 #introduce>section{
-  /* border-top: 25px; */
-  margin-top: 15px;
-  width: 300px;
+   /*margin-top: 25px;*/
+  margin-top: 40px;
+    margin-bottom: 35px;
+  width: 28%;
   height: 400px;
-  margin-bottom: 0px;
+  /*margin-bottom: 0px;*/
   /* border: 1px solid red; */
   /* border-radius: 30px; */
 }

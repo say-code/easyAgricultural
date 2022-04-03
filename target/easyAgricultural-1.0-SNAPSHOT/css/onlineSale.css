@@ -94,7 +94,7 @@ body{
 }
 
 #lead_person>div>div{
-    margin-top: 12px;
+    /*margin-top: -2px;*/
     margin-left:15%;
     width:70%;
     border:rgb(89, 130, 63) solid 1px;

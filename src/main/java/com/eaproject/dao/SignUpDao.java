@@ -14,7 +14,7 @@ public class SignUpDao {
             conn = DriverManager.getConnection(url,"root","2002525wyh1+1=2");
             //3.定义sql语句
             String sql = "insert into users(userName,passWord,nickname,phone,fans,contribute)values('"
-                    +userName+"','"+passWord+"','"+nickName+"','"+phone+"','"+fans+"','"+contributes+"');";
+                    +userName+"','"+passWord+"','"+phone+"','"+nickName+"','"+fans+"','"+contributes+"');";
             //4.从连接对象中获取一个执行人
             state = conn.createStatement();
             //5.执行sql语句
