@@ -31,5 +31,14 @@
         <servlet-name>SignUpServlet</servlet-name>
         <url-pattern>/SignUp</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>personServlet</servlet-name>
+        <servlet-class>com.eaproject.controller.personServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>personServlet</servlet-name>
+        <url-pattern>/person</url-pattern>
+    </servlet-mapping>
 </web-app>
 

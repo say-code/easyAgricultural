@@ -1,17 +1,19 @@
 package com.eaproject.dao;
 
+import com.eaproject.Config;
+
 import java.io.IOException;
 import java.sql.*;
 
 public class LoadMessageDao_MARA {
     public LoadMessageDao_MARA() throws IOException {
-        String url = "jdbc:mysql://127.0.0.1:3306/easyagricultural?useUnicode=true&characterEncoding=utf8&useSSL=false";
+        String url = "jdbc:mysql://127.0.0.1:"+ Config.PORT+"/easyagricultural?useUnicode=true&characterEncoding=utf8&useSSL=false";
         Statement state = null;
         Connection conn = null;
         try{
 
         Class.forName("com.mysql.jdbc.Driver");
-        conn = DriverManager.getConnection(url,"root","2002525wyh1+1=2");
+        conn = DriverManager.getConnection(url,Config.DATABASENAME,Config.DATABASEPASSWD);
         System.out.println("LoadMessageDao_MARA发来贺电：数据库连接成功！");
         state = conn.createStatement();
         LoadMessage_MARA loadMessage_mara = new LoadMessage_MARA();

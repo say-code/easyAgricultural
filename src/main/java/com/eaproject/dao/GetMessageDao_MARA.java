@@ -13,14 +13,14 @@ public class GetMessageDao_MARA {
     private List<Date> maraTime = new ArrayList<Date>();
     private int messageNum = Config.MAXMESSAGE;
     public GetMessageDao_MARA() {
-        String url = "jdbc:mysql://127.0.0.1:3306/easyagricultural?useUnicode=true&characterEncoding=utf8&useSSL=false";
+        String url = "jdbc:mysql://127.0.0.1:"+Config.PORT+"/easyagricultural?useUnicode=true&characterEncoding=utf8&useSSL=false";
         Statement state = null;
         Connection conn = null;
         try {
             //1.注册驱动
             Class.forName("com.mysql.jdbc.Driver");
             //2.获取连接对象
-            conn = DriverManager.getConnection(url, "root", "2002525wyh1+1=2");
+            conn = DriverManager.getConnection(url, Config.DATABASENAME, Config.DATABASEPASSWD);
             state = conn.createStatement();
             System.out.println("GetMessageDao_MARA发来贺电：数据库连接成功！");
 //            String sql = "select * from message where source"

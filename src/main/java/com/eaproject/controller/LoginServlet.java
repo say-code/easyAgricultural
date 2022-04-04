@@ -4,6 +4,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -34,6 +35,9 @@ public class LoginServlet extends HttpServlet {
         if( ifExist == true ){
             System.out.println("LoginServlet发来贺电：登录成功！");
             System.out.println("欢迎"+UserData.nickName+"进入系统");
+//            HttpSession session = req.getSession();
+//            session.setAttribute("userName",userName);
+//            sess
             resp.sendRedirect("/home.html");
 
         }else{
